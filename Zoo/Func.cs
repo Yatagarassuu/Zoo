@@ -49,39 +49,6 @@ namespace Zoo
             return list;
         }
 
-        public ArrayList Pets_children()
-        {
-            ArrayList list = new ArrayList();
-            MySqlCommand cmd = new MySqlCommand($"SELECT * FROM Pets_children", connection);
-            connection.Open();
-            MySqlDataReader dr = cmd.ExecuteReader();
-            if (dr.HasRows)
-            {
-                foreach (DbDataRecord result in dr)
-                {
-                    list.Add(result);
-                }
-            }
-            connection.Close();
-            return list;
-        }
-
-        public ArrayList Events()
-        {
-            ArrayList list = new ArrayList();
-            MySqlCommand cmd = new MySqlCommand($"SELECT * FROM Event", connection);
-            connection.Open();
-            MySqlDataReader dr = cmd.ExecuteReader();
-            if (dr.HasRows)
-            {
-                foreach (DbDataRecord result in dr)
-                {
-                    list.Add(result);
-                }
-            }
-            connection.Close();
-            return list;
-        }
 
         public bool Add_to_Pets(string Name, string Age, string Sex)
         {

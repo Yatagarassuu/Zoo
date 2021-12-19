@@ -31,6 +31,23 @@ namespace Zoo
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Sim_animals a = new Sim_animals();
+            a.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       // private void button2_Click(object sender, EventArgs e)
+       // {
+       //     OpenChildForm(new Sim_animals(), sender);
+       // }
+
         private void button2_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Sim_animals(), sender);
@@ -39,16 +56,6 @@ namespace Zoo
         private void button3_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Sim_workers(), sender);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Pets_children(), sender);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Events(), sender);
         }
     }
 }
