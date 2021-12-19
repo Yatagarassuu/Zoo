@@ -60,5 +60,10 @@ namespace Zoo
         {
             dataGridView1.DataSource = f.Workers();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = f.Workers();
+        }
     }
 }
